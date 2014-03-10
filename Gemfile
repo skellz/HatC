@@ -31,6 +31,9 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+gem 'sass', '3.3.0.alpha.149'
+gem 'compass', '0.12.2'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
@@ -60,3 +63,4 @@ end
 gem 'spree', '2.2.0'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-2-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
+gem 'spree_fancy', :git => 'git://github.com/spree/spree_fancy.git', :branch => '2-2-stable'
