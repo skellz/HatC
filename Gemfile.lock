@@ -10,6 +10,14 @@ GIT
       spree_core (~> 2.2.0.beta)
 
 GIT
+  remote: https://github.com/skellz/spree_simple_sales
+  revision: 09c782271c17c9159431eda1bd863045aa909d6d
+  branch: 2-2-stable
+  specs:
+    spree_simple_sales (2.2.0)
+      spree_core (~> 2.2.0)
+
+GIT
   remote: https://github.com/spree/spree_auth_devise.git
   revision: 1ccd7048bf5595bcfd0ccdb7a8863c12fcf84991
   branch: 2-2-stable
@@ -31,12 +39,6 @@ GIT
   specs:
     spree_gateway (2.2.1)
       savon (~> 1.2)
-      spree_core (~> 2.2.0)
-
-PATH
-  remote: ../spree_simple_sales
-  specs:
-    spree_simple_sales (2.2.0)
       spree_core (~> 2.2.0)
 
 GEM
