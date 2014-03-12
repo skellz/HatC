@@ -55,7 +55,6 @@ end
 
 group :test, :development do
   gem 'pry-rails'
-  gem 'binding_of_caller'
   gem 'launchy'
   gem 'capybara'
 end
