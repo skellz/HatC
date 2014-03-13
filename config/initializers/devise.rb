@@ -1,3 +1,3 @@
-Divise.setup do |config|
+Devise.setup do |config|
   config.secret_key = 'f627685f724782e5ecbd9142955bc3e807ad96c482971a2ca17e6a37a86c93808b8962fbed8200798c7e282bc60f3a80634eabb8e0cf944634d8cb1639ffeaf4'
 end
