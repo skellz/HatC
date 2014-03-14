@@ -32,11 +32,10 @@ GIT
 
 GIT
   remote: https://github.com/spree/spree_gateway.git
-  revision: 3b4a48bf444b484b5271e149d59397841dc1696c
+  revision: 2f0db75d111b9a053620cda92530cdfa5468a77c
   branch: 2-2-stable
   specs:
     spree_gateway (2.2.1)
-      savon (~> 1.2)
       spree_core (~> 2.2.0)
 
 GEM
@@ -80,9 +79,6 @@ GEM
     acts_as_list (0.3.0)
       activerecord (>= 3.0)
     addressable (2.3.5)
-    akami (1.2.1)
-      gyoku (>= 0.4.0)
-      nokogiri
     arel (4.0.2)
     atomic (1.1.15)
     awesome_nested_set (3.0.0.rc.3)
@@ -96,7 +92,7 @@ GEM
       bcrypt (>= 3.1.3)
     builder (3.1.4)
     cancan (1.6.10)
-    canonical-rails (0.0.5)
+    canonical-rails (0.0.6)
       rails (>= 3.1, < 5.0)
     capybara (2.2.1)
       mime-types (>= 1.16)
@@ -107,7 +103,7 @@ GEM
     chunky_png (1.3.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
-    cocaine (0.5.0)
+    cocaine (0.5.3)
       climate_control (>= 0.0.3, < 1.0)
     coderay (1.1.0)
     coffee-rails (4.0.1)
@@ -143,15 +139,11 @@ GEM
     friendly_id (5.0.3)
       activerecord (>= 4.0.0)
     fssm (0.2.10)
-    gyoku (0.4.6)
-      builder (>= 2.1.2)
     highline (1.6.21)
     hike (1.2.3)
     httparty (0.13.0)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    httpi (1.1.1)
-      rack
     i18n (0.6.9)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
@@ -183,9 +175,8 @@ GEM
     multi_xml (0.5.5)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
-    nori (1.1.5)
     orm_adapter (0.5.0)
-    paperclip (3.4.1)
+    paperclip (3.4.2)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -216,6 +207,11 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.0.3)
       sprockets-rails (~> 2.0.0)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.2)
+    rails_stdout_logging (0.0.3)
     railties (4.0.3)
       actionpack (= 4.0.3)
       activesupport (= 4.0.3)
@@ -246,14 +242,6 @@ GEM
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0)
-    savon (1.2.0)
-      akami (~> 1.2.0)
-      builder (>= 2.1.2)
-      gyoku (~> 0.4.5)
-      httpi (~> 1.1.0)
-      nokogiri (>= 1.4.0)
-      nori (~> 1.1.0)
-      wasabi (~> 2.5.0)
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
@@ -262,7 +250,7 @@ GEM
       thor (~> 0.14)
     shoulda-matchers (2.5.0)
       activesupport (>= 3.0.0)
-    slop (3.4.7)
+    slop (3.5.0)
     spree (2.2.0)
       spree_api (= 2.2.0)
       spree_backend (= 2.2.0)
@@ -344,9 +332,6 @@ GEM
       tzinfo
     warden (1.2.3)
       rack (>= 1.0)
-    wasabi (2.5.1)
-      httpi (~> 1.0)
-      nokogiri (>= 1.4.0)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
@@ -363,6 +348,7 @@ DEPENDENCIES
   pg
   pry-rails
   rails (= 4.0.3)
+  rails_12factor
   rspec-rails
   sass (= 3.3.0.alpha.149)
   sass-rails (~> 4.0.0)
