@@ -7,10 +7,10 @@
 # config.setting_name = 'new value'
 Spree.config do |config|
   config.site_name = "Hatcore"
-  config.use_s3 = true
-  config.s3_bucket = "hatcore-production"
-  config.s3_access_key = ENV['AWS_ACCESS_KEY']
-  config.s3_secret = ENV['AWS_SECRET_KEY']
+  # config.use_s3 = true
+  # config.s3_bucket = "hatcore-production"
+  # config.s3_access_key = ENV['AWS_ACCESS_KEY']
+  # config.s3_secret = ENV['AWS_SECRET_KEY']
 end
 
 Paperclip.interpolates(:s3_eu_url) do |attachment, style|

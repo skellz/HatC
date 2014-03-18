@@ -339,6 +339,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-sdk
   capybara
   coffee-rails (~> 4.0.0)
   compass (= 0.12.2)
