@@ -32,7 +32,14 @@ module Hatcore
       end
     end
 
-    config.paperclip_defaults = {:storage => :s3, :s3_credentials => {:bucket => ENV['AWS_BUCKET'], :access_key_id => ENV['AWS_ACCESS_KEY'], :secret_access_key => ENV['AWS_SECRET_KEY']}
+    config.before_configuration do
+      env_file = File.join(Rails.root, 'config', 'local_env.yml')
+      YAML.load(File.open(env_file)).each do |key, value|
+        ENV[key.to_s] = value
+      end if File.exists?(env_file)
+    end
+
+    config.paperclip_defaults = {:storage => :s3, :s3_credentials => {:bucket => ENV['AWS_BUCKET'], :access_key_id => ENV['AWS_ACCESS_KEY'], :secret_access_key => ENV['AWS_SECRET_KEY']}}
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
